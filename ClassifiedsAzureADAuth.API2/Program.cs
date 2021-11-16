@@ -7,13 +7,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ClassifiedsAzureADAuth.Client
+namespace ClassifiedsAzureADAuth.API2
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-             CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
