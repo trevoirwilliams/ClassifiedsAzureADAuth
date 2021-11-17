@@ -33,17 +33,17 @@ namespace ClassifiedsAzureADAuth.Client.Pages
         public async Task OnGet()
         {
             var token = await HttpContext.GetTokenAsync("access_token");
-            var httpClient = httpClientFactory.CreateClient();
+            ////var httpClient = httpClientFactory.CreateClient();
 
-            var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44336/classifiedslisting");
-            request.Headers.Authorization = new AuthenticationHeaderValue(JwtBearerDefaults.AuthenticationScheme, token);
+            ////var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44336/classifiedslisting");
+            ////request.Headers.Authorization = new AuthenticationHeaderValue(JwtBearerDefaults.AuthenticationScheme, token);
 
-            var response = await httpClient.SendAsync(request);
+            ////var response = await httpClient.SendAsync(request);
 
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogError(response.StatusCode.ToString());
-            }
+            ////if (!response.IsSuccessStatusCode)
+            ////{
+            ////    _logger.LogError(response.StatusCode.ToString());
+            ////}
         }
     }
 }

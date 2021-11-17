@@ -31,7 +31,7 @@ namespace ClassifiedsAzureADAuth.Client
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
-                .AddMicrosoftIdentityWebApp(Configuration.GetSection("AzureAd"));
+                .AddMicrosoftIdentityWebApp(Configuration.GetSection("AzureAdB2C"));
 
             services.AddAuthorization(options =>
             {
